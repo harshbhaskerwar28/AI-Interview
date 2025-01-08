@@ -1,9 +1,12 @@
+streamlit
 speechrecognition
 transformers
 langchain
+langchain-groq
 numpy
 requests
 moviepy
 wave
 streamlit-lottie
 streamlit-webrtc
+python-dotenv
