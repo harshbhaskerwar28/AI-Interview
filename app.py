@@ -27,9 +27,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Initialize Groq client
-os.environ["GROQ_API_KEY"] = "your-api-key-here"
-
 def load_lottie_url(url: str):
     r = requests.get(url)
     if r.status_code != 200:
@@ -127,8 +124,8 @@ class InterviewAnalyzer:
     def __init__(self):
         self.sentiment_analyzer = pipeline("sentiment-analysis")
         self.llm = ChatGroq(
-            api_key=os.getenv("GROQ_API_KEY"),
-            model_name="mixtral-8x7b-32768"
+            model_name="llama-3.1-70b-versatile",
+            groq_api_key=os.getenv("GROQ_API_KEY")
         )
     
     def analyze_response(self, text: str, question: str) -> Dict:
