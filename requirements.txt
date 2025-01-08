@@ -10,3 +10,4 @@ imageio[ffmpeg]>=2.9.0
 streamlit-lottie>=0.0.5
 streamlit-webrtc>=0.45.0
 python-dotenv>=1.0.0
+videofileclip
