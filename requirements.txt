@@ -1,0 +1,9 @@
+speechrecognition
+transformers
+langchain
+numpy
+requests
+moviepy
+wave
+streamlit-lottie
+streamlit-webrtc
