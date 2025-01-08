@@ -15,6 +15,9 @@ import requests
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 import time
 import re
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Page configuration
 st.set_page_config(
