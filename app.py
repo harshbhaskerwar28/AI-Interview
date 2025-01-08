@@ -8,7 +8,7 @@ import os
 import json
 from typing import Dict, List, Optional
 from datetime import datetime
-from moviepy.editor import VideoFileClip
+from moviepy import VideoFileClip
 import wave
 from streamlit_lottie import st_lottie
 import requests
